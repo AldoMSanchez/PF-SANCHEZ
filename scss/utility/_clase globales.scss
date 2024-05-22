@@ -1,0 +1,40 @@
+/* Definición de colores */
+$color-black: #000000;
+$color-white: #ffffff;
+$color-gray: #808080;
+$color-light-gray: #cfcfcf;
+$color-red: #ff2f28;
+
+/* Estilos de texto */
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Estilos de botón */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: $color-red;
+  color: $color-white;
+}
+
+.btn-primary:hover {
+  background-color: darken($color-red, 10%);
+}
+
+/* Estilos de contenedor */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

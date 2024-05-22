@@ -1,0 +1,72 @@
+/* Box-sizing border-box */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import 'nav';
+@import 'reset';
+@import 'fonts';
+@import 'colors';
+@import 'header';
+@import 'index';
+@import 'footer';
+@import 'peliculas';
+@import 'globals';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove list styles (bullets/numbers) */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove default margin */
+  body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+  
+  /* Remove default font size */
+  body {
+    font-size: 1rem;
+  }
+  
+  /* Remove default line-height */
+  body, h1, h2, h3, h4, h5, h6, p {
+    line-height: 1;
+  }
+  
+  /* Remove default font style */
+  body, button, input, select, textarea {
+    font: inherit;
+  }
+  
+  /* Remove default button style */
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Remove default input style */
+  input, select, textarea {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+  }
+  
+  /* Remove default anchor style */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove default text selection */
+  ::selection {
+    background-color: transparent;
+    color: inherit;
+  }
+  

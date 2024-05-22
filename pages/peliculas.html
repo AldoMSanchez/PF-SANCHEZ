@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldiflix - Películas</title>
+    <meta name="description" content="Aldiflix - Tu plataforma de streaming favorita. Disfruta de las mejores películas y series en línea.">
+    <meta name="keywords" content="Aldiflix, películas, series, streaming">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid #444;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu ul li {
+            margin-right: 20px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu ul li a:hover {
+            color: #ddd;
+        }
+
+        .movies-section {
+            padding: 50px 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="number"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #666;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .btn-1 {
+            padding: 10px 20px;
+            background-color: #bf0f0f;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-1:hover {
+            background-color: #920b0b;
+        }
+
+        .requested-movies ul {
+            padding: 0;
+        }
+
+        .requested-movies li {
+            border: 1px solid #666;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #333;
+            list-style-type: none;
+        }
+
+        .requested-movies li h3,
+        .requested-movies li p {
+            margin: 0;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+
+            <a href="../index.html" class="logo">Aldiflix</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="../images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./peliculas.html">Peliculas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-1">Login</a>
+        </div>
+    </header>
+
+    <section class="movies-section">
+        <div class="container">
+            <h2>Películas</h2>
+            <p>¿No encuentras tu película favorita en nuestro catálogo? ¡Déjanos saber cuál es y haremos todo lo posible por añadirla!</p>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="pelicula">Nombre de la película:</label>
+                    <input type="text" id="pelicula" name="pelicula" required>
+                </div>
+                <div class="form-group">
+                    <label for="anio">Año de lanzamiento:</label>
+                    <input type="number" id="anio" name="anio">
+                </div>
+                <div class="form-group">
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero">
+                        <option value="accion">Acción</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="comedia">Comedia</option>
+                        <option value="drama">Drama</option>
+                        <option value="terror">Terror</option>
+                        <option value="romance">Romance</option>
+                        <option value="ciencia_ficcion">Ciencia ficción</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sinopsis">Sinopsis:</label>
+                    <textarea id="sinopsis" name="sinopsis" required></textarea>
+                </div>
+                <button type="submit" class="btn-1">Enviar solicitud</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="requested-movies">
+        <div class="container">
+            <h2>Películas solicitadas</h2>
+            <p>Estas son algunas de las películas que nuestros usuarios han solicitado:</p>
+            <ul>
+                <li>
+                    <h3>Nombre de la película: [Nombre de la película]</h3>
+                    <p>Año de lanzamiento: [Año de lanzamiento]</p>
+                    <p>Género: [Género]</p>
+                    <p>Sinopsis: [Sinopsis]</p>
+                </li>
+                <!-- Repetir este bloque para cada película solicitada -->
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer container">
+        <h3>Aldiflix</h3>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./peliculas.html">Peliculas</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
+

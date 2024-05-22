@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap');
+@import 'nav';
+@import 'reset';
+@import 'fonts';
+@import 'colors';
+@import 'header';
+@import 'index';
+@import 'footer';
+@import 'peliculas';
+@import 'globals';
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  font-family: 'Bebas Neue', cursive;
+}
