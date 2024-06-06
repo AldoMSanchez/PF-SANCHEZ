@@ -1,2 +1,5 @@
 /node_modules
 *.json
+
+# Ignorar la carpeta node_modules en la raíz del proyecto
+node_modules/
